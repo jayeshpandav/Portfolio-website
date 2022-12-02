@@ -1,0 +1,24 @@
+.testimonial_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+}
+.testimonial_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem;
+    background: var(--color-bg-varient);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
+.testimonial_item img{
+    height: 15rem;
+    width: 15rem;
+    background: var(--color-primary-varient);
+    overflow: hidden;
+    border-radius: 100%;
+}
+small{
+    color: rgba(255, 255, 255, 0.8);
+}

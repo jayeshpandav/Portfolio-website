@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+
 import emailjs from '@emailjs/browser';
 import "./contact.css";
 import { AiOutlineMail } from "react-icons/ai";
@@ -82,6 +83,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+}; 
 
 export default Contact;

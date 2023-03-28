@@ -1,18 +1,28 @@
-import React from 'react'
-import {BsLinkedin} from 'react-icons/bs'
-import {BsGithub} from 'react-icons/bs'
-import {FiDribbble} from 'react-icons/fi'
+import React from "react";
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 
 function HeaderSocioal() {
   return (
     <>
-    <div className="header_socials">
-        <a href="http://linkedin.com" target='_blank'  rel="noreferrer"><BsLinkedin/></a>
-        <a href="http://github.com" target='_blank'  rel="noreferrer"><BsGithub/></a>
-        <a href="http://dribble.com" target='_blank'  rel="noreferrer"><FiDribbble/></a>
-    </div>
+      <div className="header_socials">
+        <a
+          href="https://www.linkedin.com/in/jayesh-pandav-68368922a/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsLinkedin />
+        </a>
+        <a
+          href="https://github.com/jayeshpandav"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <BsGithub />
+        </a>
+      </div>
     </>
-  )
+  );
 }
 
-export default HeaderSocioal
+export default HeaderSocioal;

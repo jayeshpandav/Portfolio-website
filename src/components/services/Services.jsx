@@ -2,6 +2,21 @@ import React from "react";
 import "./services.css";
 import { BsCheck } from "react-icons/bs";
 
+const frontendServices = [
+  "Creating responsive and accessible websites using HTML, CSS, and JavaScript",
+  "Developing user interfaces using popular front-end frameworks like ReactJs and NextJs",
+  "Designing and implementing UIs with Bootstrap, Material UI, and Tailwind CSS",
+  "Providing maintenance and optimization services for existing front-end codebases",
+];
+
+const backendServices = [
+  "Developing scalable and performant web applications using Node.js and Express.js",
+  "Building RESTful APIs to handle data retrieval and manipulation",
+  "Designing and implementing real-time applications using Websockets",
+  "Developing and integrating with NoSQL databases like MongoDB",
+  "Providing ongoing support and maintenance for existing backend systems",
+];
+
 const Services = () => {
   return (
     <section id="services">
@@ -11,93 +26,33 @@ const Services = () => {
       <div className="container services_container">
         <article className="service">
           <div className="service_head">
-            <h3>UI/UX DESIGN</h3>
+            <h3>Frontend Development</h3>
           </div>
 
           <ul className="service_list">
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
+            {frontendServices.map((service, index) => (
+              <li key={index}>
+                <BsCheck className="service_list-icon" />
+                <p>{service}</p>
+              </li>
+            ))}
           </ul>
         </article>
-            {/* End of UI/UX */}
 
-            <article className="service">
+        <article className="service">
           <div className="service_head">
-            <h3>UI/UX DESIGN</h3>
+            <h3>Backend Development</h3>
           </div>
 
           <ul className="service_list">
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
+            {backendServices.map((service, index) => (
+              <li key={index}>
+                <BsCheck className="service_list-icon" />
+                <p>{service}</p>
+              </li>
+            ))}
           </ul>
         </article>
-            {/* End of UI/UX */}
-
-            <article className="service">
-          <div className="service_head">
-            <h3>UI/UX DESIGN</h3>
-          </div>
-
-          <ul className="service_list">
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BsCheck className="service_list-icon" />
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
-        </article>
-            {/* End of UI/UX */}
       </div>
     </section>
   );

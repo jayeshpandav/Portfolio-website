@@ -1,13 +1,13 @@
-import React from 'react'
-import './about.css'
-import ME from '../../assets/man3.png'
-import {FaAward} from 'react-icons/fa'
-import {FaUsers} from 'react-icons/fa'
-import {VscFolderLibrary} from 'react-icons/vsc'
+import React from "react";
+import "./about.css";
+import ME from "../../assets/Jayesh.jpg";
+import { FaAward } from "react-icons/fa";
+import { SiHackster } from "react-icons/si";
+import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
   return (
-    <section id='about'>
+    <section id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
@@ -21,29 +21,39 @@ const About = () => {
         <div className="about_content">
           <div className="about_cards">
             <article className="about_card">
-              <FaAward className='about_icon'/>
+              <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>3+ years Experience</small>
+              <small>2 years Experience (Projects)</small>
             </article>
             <article className="about_card">
-              <FaUsers className='about_icon'/>
-              <h5>Clients</h5>
-              <small>300+ clients Worldwide</small>
+              <SiHackster className="about_icon" />
+              <h5>Hackathons</h5>
+              <small>2</small>
             </article>
             <article className="about_card">
-              <VscFolderLibrary className='about_icon'/>
+              <VscFolderLibrary className="about_icon" />
               <h5>Projects</h5>
-              <small>100+ completed</small>
+              <small>10+ completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam incidunt tempora aliquid amet repudiandae tempore magni corrupti. Eveniet facilis perspiciatis veritatis odit, incidunt, doloremque necessitatibus velit qui suscipit ratione hic.
+            A highly motivated and skilled web developer with experience in
+            HTML, CSS, JavaScript, Bootstrap, Material UI, Tailwind, and
+            ReactJS. Proven track record of successfully completing personal
+            projects using ReactJS and participating in college club projects
+            utilizing the same technology. Additionally, possess a strong
+            foundation in back-end development and actively working to improve
+            my skills in ExpressJS and NodeJS. Also having a good knowledge of
+            C++ programming language and hands-on c programming and python
+            programming
           </p>
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
